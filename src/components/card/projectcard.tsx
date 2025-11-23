@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { FiStar, FiCode, FiLayout, FiGithub, FiExternalLink, FiX, FiLayers, FiCpu } from "react-icons/fi";
+import {  FiLayout, FiGithub, FiExternalLink, FiX, FiLayers, FiCpu } from "react-icons/fi";
 
 interface Project {
   id: number;

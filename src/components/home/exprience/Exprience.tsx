@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FiBriefcase, FiCalendar } from "react-icons/fi";
+import {  FiCalendar } from "react-icons/fi";
 import { experienceData } from "@/constants/expritence";
 
 const ExperienceSection = () => {

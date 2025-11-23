@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { SiReact, SiPython, SiDocker, SiAwslambda, SiTensorflow, SiTypescript, SiNextdotjs, SiPostgresql, SiKubernetes, SiGit, SiNodedotjs, SiMongodb, SiTailwindcss, SiLinux, SiTerraform, SiOpencv, SiPandas, SiScikitlearn, SiPytorch, SiOpenai } from "react-icons/si";
+import { SiReact,  SiDocker, SiAwslambda, SiTensorflow, SiTypescript, SiNextdotjs, SiPostgresql, SiKubernetes, SiGit, SiNodedotjs, SiLinux, SiTerraform, SiOpencv, SiPandas, SiPytorch, SiOpenai } from "react-icons/si";
 import { FiCpu, FiServer } from "react-icons/fi";
 
 const SkillSection = () => {
