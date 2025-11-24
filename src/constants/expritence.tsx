@@ -2,6 +2,23 @@ export const experienceData = {
   title: "My Career Path",
   subtitle: "From intern to innovator – a journey of growth and learning.",
   timeline: [
+     {
+      role: "Jr Project Engineer",
+      company: "Amrita Create Lab",
+      duration: "July 2025 - september 2025",
+      contributions: [
+        "Engineered  LLM- and VLM-based solutions for assistive communication, sign language translation, Augmentative and Alternative Communication AAC systems, and multilingual educational tools. ",
+        " Integrating speech, text, visual, and multimodal data to build inclusive AI platforms that support accessibility in education and healthcare. ",
+        "Collaborating with interdisciplinary teams across education, healthcare, and disability studies to co-create impactful AI systems",
+      ],
+      technologies: [
+        "Python",
+        "Vision transformers",
+        "VAEs",
+        "LLMS",
+        "AI video generation",
+      ],
+    },
     {
       role: "Research Intern",
       company: "Amrita Create Lab",
@@ -21,23 +38,7 @@ export const experienceData = {
         "GNN",
       ],
     },
-    {
-      role: "Jr Project Engineer",
-      company: "Amrita Create Lab",
-      duration: "July 2025 - september 2025",
-      contributions: [
-        "Engineered  LLM- and VLM-based solutions for assistive communication, sign language translation, Augmentative and Alternative Communication AAC systems, and multilingual educational tools. ",
-        " Integrating speech, text, visual, and multimodal data to build inclusive AI platforms that support accessibility in education and healthcare. ",
-        "Collaborating with interdisciplinary teams across education, healthcare, and disability studies to co-create impactful AI systems",
-      ],
-      technologies: [
-        "Python",
-        "Vision transformers",
-        "VAEs",
-        "LLMS",
-        "AI video generation",
-      ],
-    },
+   
   ],
   growthMetrics: [
     { label: "Code Quality", value: 80, color: "bg-orange-500" },
