@@ -9,70 +9,124 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
-  title: "Nikhil Singh | Full-Stack Developer & AI Engineer | Nepal Tech Specialist",
-  description: "Kathmandu-based Computer Engineer specializing in Web Development, AI Solutions, and SEO Optimization. Offering end-to-end software development services with expertise in React, Next.js, Python, and Cloud Technologies.",
+  title: "Nikhil Singh | Full-Stack Developer & AI Engineer",
+  description: "Expert Full-Stack Developer and AI Engineer specializing in React, Next.js, Python, and Machine Learning. Delivering scalable web applications, AI solutions, and SEO-optimized digital experiences. Based in India, serving clients globally.",
   keywords: [
-    "Full-Stack Developer Nepal",
-    "AI Engineer Kathmandu",
-    "Computer Engineer Portfolio",
-    "Web Development Services Nepal",
-    "React Next.js Expert",
-    "Python Developer Nepal",
-    "Machine Learning Solutions",
-    "SEO Specialist Nepal",
-    "Cloud Computing Expert",
-    "Nepal Tech Industry",
-    "Software Development Kathmandu",
+    "Full-Stack Developer",
+    "AI Engineer",
+    "React Developer",
+    "Next.js Expert",
+    "Python Developer",
+    "Machine Learning Engineer",
+    "Web Development Services",
+    "SEO Optimization",
+    "Cloud Solutions AWS",
     "REST API Development",
-    "Database Design Expert",
-    "DevOps Engineering Nepal",
-    "Natural Language Processing",
-    "Predictive Analytics Solutions",
-    "Cybersecurity Specialist Nepal",
-    "GraphQL Implementation",
-    "Digital Marketing Nepal",
-    "Tech Consultant Nepal"
+    "GraphQL Developer",
+    "NLP Solutions",
+    "Computer Engineer",
+    "Freelance Developer",
+    "Software Consultant",
   ],
-  metadataBase: new URL("https://nikhilsingh.com.np"),
+  metadataBase: new URL("https://nikhilsingh.dev"),
+  
+  alternates: {
+    canonical: "https://nikhilsingh.dev",
+  },
+  
+  authors: [{ name: "Nikhil Singh", url: "https://nikhilsingh.dev" }],
+  
+  creator: "Nikhil Singh",
+  publisher: "Nikhil Singh",
+  
   openGraph: {
     type: "website",
-    url: "https://nikhilsingh.com.np",
-    title: "Nikhil Singh | Nepal's Premier Tech Solutions Provider",
-    description: "Professional portfolio showcasing cutting-edge web development, AI innovations, and digital marketing strategies from Kathmandu",
-    siteName: "Nikhil Singh Tech Portfolio",
-    images: [{
-      url: "https://nikhilsingh.com.np/images/nikhil.png",
-      width: 1200,
-      height: 630,
-      alt: "Nikhil Singh - Tech Portfolio Overview",
-    }],
+    locale: "en_US",
+    url: "https://nikhilsingh.dev",
+    title: "Nikhil Singh | Full-Stack Developer & AI Engineer",
+    description: "Expert Full-Stack Developer and AI Engineer specializing in React, Next.js, Python, and Machine Learning. Delivering scalable web applications and AI solutions.",
+    siteName: "Nikhil Singh Portfolio",
+    images: [
+      {
+        url: "https://nikhilsingh.dev/images/nikhil.png",
+        width: 1200,
+        height: 630,
+        alt: "Nikhil Singh - Full-Stack Developer and AI Engineer Portfolio",
+        type: "image/png",
+      }
+    ],
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "Nikhil Singh | Full-Stack & AI Development Expert",
-    description: "Building Nepal's tech future with innovative software solutions and AI-driven applications",
+    site: "@nikhilsing45602",
     creator: "@nikhilsing45602",
-    images: ["https://nikhilsingh.com.np/images/nikhil.png"],
+    title: "Nikhil Singh | Full-Stack Developer & AI Engineer",
+    description: "Expert in React, Next.js, Python, and Machine Learning. Building scalable web applications and AI-driven solutions.",
+    images: ["https://nikhilsingh.dev/images/nikhil.png"],
   },
+  
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      "max-video-preview": -1,
       "max-image-preview": "large",
-    }
+      "max-snippet": -1,
+    },
   },
+  
+  verification: {
+    // Add your verification codes here when you get them
+    google: "your-google-verification-code",
+    // yandex: "your-yandex-verification-code",
+    // bing: "your-bing-verification-code",
+  },
+  
+  category: "Technology",
+  
+  // Structured data for better SEO
   other: {
-    "geo.region": "NP",
-    "geo.placename": "Kathmandu",
-    "geo.position": "27.7172;85.3240",
-    "ICBM": "27.7172, 85.3240",
     "og:email": "singhnikhil03@outlook.com",
-    "og:phone_number": "+9779865281881",
+    "og:phone_number": "+977 7481030330",
+    "og:country-name": "India",
   },
 };
 
+// Optional: Add this JSON-LD structured data to your page for even better SEO
+export const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Nikhil Singh",
+  url: "https://nikhilsingh.dev",
+  image: "https://nikhilsingh.dev/images/nikhil.png",
+  jobTitle: "Full-Stack Developer & AI Engineer",
+  description: "Expert Full-Stack Developer and AI Engineer specializing in React, Next.js, Python, and Machine Learning.",
+  email: "singhnikhil03@outlook.com",
+  telephone: "+977-7481030330",
+  sameAs: [
+    "https://twitter.com/nikhilsing45602",
+    "https://www.linkedin.com/in/nikhilkumarsingh", // Add your actual LinkedIn
+    "https://github.com/singhnikhil01", // Add your actual GitHub
+  ],
+  knowsAbout: [
+    "Web Development",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "software Engineer",
+    "React",
+    "Next.js",
+    "Python",
+    "SEO Optimization",
+  ],
+  alumniOf: {
+    "@type": "Organization",
+    name: "Amrita Vishwa Vidyapeetham", // Add your university
+  },
+};
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -97,14 +151,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "name": "Nikhil Singh",
             "jobTitle": "Full-Stack Developer & AI Engineer",
             "url": "https://nikhilsingh.com.np",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Bhaktapur Road",
-              "addressLocality": "Kathmandu",
-              "addressRegion": "Bagmati",
-              "postalCode": "44600",
-              "addressCountry": "NP"
-            },
             "alumniOf": [
               {
                 "@type": "CollegeOrUniversity",

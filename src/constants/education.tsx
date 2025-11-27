@@ -6,7 +6,7 @@ export const educationData = [
     title: "B.Tech Computer Science and AI",
     institution: "Amrita Vishwa Vidyapeetham, Kerala",
     icon: <FaUniversity className="w-6 h-6 text-orange-500" />,
-    highlights: ["CGPA: 8.2/10", "Specialization in AI & Machine Learning"],
+    highlights: ["CGPA: 8.31/10", "Specialization in AI & Machine Learning","Merit based full scholarship"],
   },
   {
     year: "2017 - 2019",
@@ -16,6 +16,7 @@ export const educationData = [
     highlights: [
       "Scored 3.36 GPA out of 4 GPA",
       "Physics: A subject of strong interest and performance",
+      "Mahatma Gandhi Scholarship",
     ],
   },
   {
@@ -32,6 +33,51 @@ export const educationData = [
 ];
 
 export const projectsData = [
+  {
+  id: 4,
+  title: "Aura – Next-Generation Streaming Platform",
+  type: "Full Stack Development",
+  image:
+    "https://ajuo8pgnwp.ufs.sh/f/FHfjqH6Z9VrPnOZcBYoA4UurhgL2WIO5ajsFS0VxfmKBeJRz",
+  highlights: [
+    "High-quality video streaming powered by Mux",
+    "Creator Studio for uploading and managing videos",
+    "Immersive 'Midnight Ember' UI with premium gradients",
+    "Real-time updates with tRPC + React Query",
+    "Secure user authentication using Clerk",
+  ],
+  github: "https://github.com/singhnikhil01/aura",   // (replace if needed)
+  demo: "https://aura-video.vercel.app/",            // (replace if needed)
+  details: {
+    overview:
+      "Aura is a next-generation video streaming platform designed for creators and communities. Built with modern technologies like Next.js 15, Mux, Clerk, and tRPC, it delivers an immersive streaming experience with a premium UI, creator tools, and real-time performance.",
+    challenges: [
+      "Implementing real-time updates with tRPC",
+      "Optimizing high-quality video playback",
+      "Designing a smooth Creator Studio workflow",
+      "Managing secure authentication and rate limiting"
+    ],
+    architecture:
+      "Next.js (App Router) → tRPC → PostgreSQL (Neon) → Mux → Clerk → Uploadthing → Upstash Redis",
+    stack: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL (Neon)",
+      "Drizzle ORM",
+      "Mux",
+      "Clerk",
+      "Uploadthing",
+      "tRPC",
+      "TanStack Query",
+      "Upstash Redis"
+    ],
+    images: [
+      "https://ajuo8pgnwp.ufs.sh/f/FHfjqH6Z9VrPnOZcBYoA4UurhgL2WIO5ajsFS0VxfmKBeJRz"
+    ],
+  },
+},
+
   {
     id: 1,
     title: "InsightInk a Blog Website",
