@@ -1,7 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import ProjectCard from '../../card/projectcard';
-import { FiExternalLink } from 'react-icons/fi';
+// import { FiExternalLink } from 'react-icons/fi';
 import { projectsData as projects } from '@/constants/education';
 
 const ProjectShowcase = () => {
