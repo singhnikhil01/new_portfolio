@@ -30,13 +30,13 @@ const ProjectShowcase = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          <a
+          {/* <a
             href="/projects"
             className="flex items-center gap-2 px-8 py-3 rounded-lg bg-sky-600 text-white font-medium hover:bg-sky-500 transition-all hover:gap-3 shadow-lg shadow-sky-900/20"
           >
             Explore More Projects
             <FiExternalLink className="text-lg" />
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </section>
